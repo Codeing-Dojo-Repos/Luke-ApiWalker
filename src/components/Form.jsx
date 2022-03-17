@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Form = props => {
@@ -18,7 +17,6 @@ const Form = props => {
 
     return(
         <div>
-            Form
             <form onSubmit={submitHandler}>
                 <label>Search for:</label>
 
@@ -28,6 +26,8 @@ const Form = props => {
                 }}>
                     <option value='people'>People</option>
                     <option value='planets'>Planets</option>
+                    <option value='starships'>Starships</option>
+                    <option value='species'>Species</option>
                 </select>
 
                 <label>ID:</label>
